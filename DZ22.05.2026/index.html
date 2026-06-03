@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="style.css">
+
+
+
+<form id="registerForm">
+    
+    <h1>Реєстрація користувача</h1>
+
+    <label>Ім'я</label>
+    <input type="text" id="name">
+
+    <label>Прізвище</label>
+    <input type="text" id="surname">
+
+    <label>Email</label>
+    <input type="email" id="email">
+
+    <label>Пароль</label>
+    <input type="password" id="password">
+
+    <label>Дата народження</label>
+    <input type="date" id="birthDate">
+
+    <label>Телефон</label>
+    <input type="text" id="phone" placeholder="+380XXXXXXXXX">
+
+    <label>Країна</label>
+    <select id="country">
+        <option>Україна</option>
+        <option>Німеччина</option>
+        <option>Польща</option>
+    </select>
+
+    <div class="radio-group">
+        <strong>Стать:</strong><br>
+        <input type="radio" id="male" name="gender" value="Чоловік">
+        <label for="male">Чоловік</label>
+
+        <input type="radio" id="female" name="gender" value="Жінка">
+        <label for="female">Жінка</label>
+    </div>
+
+    <div id="skillsBlock" class="checkbox-group">
+        <strong>Навички:</strong><br>
+        <input type="checkbox" name="skills" value="HTML"> HTML
+        <input type="checkbox" name="skills" value="CSS"> CSS
+        <input type="checkbox" name="skills" value="JS"> JavaScript
+    </div>
+
+    <label>Коментар</label>
+    <textarea id="comment"></textarea>
+
+    <input type="checkbox" id="agree">
+    <label for="agree">Я погоджуюсь з умовами</label>
+
+    <br><br>
+
+    <button type="submit">Зареєструватися</button>
+</form>
+
+<div id="result"></div>
