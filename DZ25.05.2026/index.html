@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстраційна форма</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+<form class="form-card" id="formcard">
+
+    <h1 id="title">Реєстраційна форма</h1>
+
+    <p id="subtitle">
+        Приклад сучасної HTML форми з різними елементами
+    </p>
+
+    <div class="grid">
+
+        <div class="field full">
+            <label id="themeLabel">Тема</label>
+            <select id="themeSelect">
+                <option value="dark">Темна</option>
+                <option value="light">Світла</option>
+            </select>
+        </div>
+
+        <div class="field full">
+            <label id="langLabel">Мова</label>
+            <select id="langSelect">
+                <option value="uk">Українська</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label id="nameLabel">Ім'я</label>
+            <input type="text" id="nameInput" placeholder="Введіть ім'я">
+        </div>
+
+        <div class="field">
+            <label id="surnameLabel">Прізвище</label>
+            <input type="text" id="surnameInput" placeholder="Введіть прізвище">
+        </div>
+
+        <div class="field">
+            <label>Email</label>
+            <input type="email" placeholder="example@gmail.com">
+        </div>
+
+        <div class="field">
+            <label id="passwordLabel">Пароль</label>
+            <input type="password" placeholder="********">
+        </div>
+
+        <div class="field">
+            <label id="birthLabel">Дата народження</label>
+            <input type="date">
+        </div>
+
+        <div class="field">
+            <label id="phoneLabel">Телефон</label>
+            <input type="tel" placeholder="+380...">
+        </div>
+
+        <div class="field full">
+            <label id="countryLabel">Країна</label>
+            <select>
+                <option>Україна</option>
+                <option>Польща</option>
+                <option>Німеччина</option>
+                <option>США</option>
+            </select>
+        </div>
+
+        <div class="field full">
+            <label id="commentLabel">Коментар</label>
+            <textarea id="commentInput" placeholder="Напишіть щось..."></textarea>
+        </div>
+
+    </div>
+
+    <div class="buttons">
+        <button type="submit" class="submit-btn" id="submitBtn">
+            Відправити
+        </button>
+
+        <button type="reset" class="reset-btn" id="resetBtn">
+            Очистити
+        </button>
+    </div>
+
+</form>
+
+</body>
+</html>
