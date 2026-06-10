@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    width:400px;
+    text-align:center;
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+select,
+button{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+button{
+    cursor:pointer;
+}
+
+#weatherResult{
+    margin-top:20px;
+    font-size:20px;
+}
+
+.weather-icon{
+    font-size:60px;
+}
