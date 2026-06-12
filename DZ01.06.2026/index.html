@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎬 Movie Search</h1>
+
+    <div class="search-panel">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Введіть назву фільму..."
+        >
+
+        <select id="typeSelect">
+            <option value="">Усі типи</option>
+            <option value="movie">Movie</option>
+            <option value="series">Series</option>
+            <option value="episode">Episode</option>
+        </select>
+
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="movies" class="movies"></div>
+
+    <div id="pagination" class="pagination"></div>
+
+    <div id="details"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

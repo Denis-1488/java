@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    padding:30px;
+}
+
+.container{
+    max-width:1300px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:white;
+    margin-bottom:30px;
+}
+
+.search-panel{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.search-panel input,
+.search-panel select{
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.search-panel input{
+    width:300px;
+}
+
+.search-panel button{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    background:#f97316;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.search-panel button:hover{
+    transform:scale(1.05);
+}
+
+.movies{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+.card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:15px;
+    text-align:center;
+}
+
+.card-body h3{
+    margin-bottom:10px;
+}
+
+.card-body p{
+    margin-bottom:10px;
+}
+
+.card-body button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+}
+
+.card-body button:hover{
+    background:#1d4ed8;
+}
+
+.pagination{
+    text-align:center;
+    margin-top:30px;
+}
+
+.pagination button{
+    margin:5px;
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.active-page{
+    background:#f97316;
+    color:white;
+}
+
+#details{
+    margin-top:40px;
+}
+
+.details-box{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.details-box img{
+    width:300px;
+    border-radius:10px;
+}
+
+.info{
+    flex:1;
+}
+
+.info h2{
+    margin-bottom:15px;
+}
+
+.info p{
+    margin-bottom:10px;
+}
+
+.error{
+    color:white;
+    text-align:center;
+    font-size:24px;
+}
