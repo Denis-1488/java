@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f6f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+    background: linear-gradient(135deg, #ffb347, #ffcc33);
+    color: white;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn {
+    border-radius: 10px;
+}
+
+.category-btn {
+    width: 100%;
+}
+
+.modal-body img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ingredients-list li {
+    margin-bottom: 5px;
+}
+
+.favorite-btn {
+    margin-left: 10px;
+}
+
+.empty-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: gray;
+    margin-top: 30px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero button {
+        margin-top: 10px;
+    }
+}
