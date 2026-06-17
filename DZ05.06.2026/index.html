@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍽 Meal Explorer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<nav class="navbar navbar-dark bg-dark shadow">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            🍽 Meal Explorer
+        </a>
+
+        <form class="d-flex" id="searchForm">
+            <input
+                    class="form-control me-2"
+                    type="search"
+                    id="searchInput"
+                    placeholder="Пошук страви">
+
+            <button class="btn btn-warning">
+                Знайти
+            </button>
+        </form>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1>Каталог рецептів</h1>
+
+        <p class="lead">
+            Знайди улюблену страву та переглянь рецепт
+        </p>
+
+        <button class="btn btn-success mt-3" id="randomBtn">
+            🎲 Випадкова страва
+        </button>
+    </div>
+</section>
+
+<!-- Categories -->
+<section class="container py-5">
+
+    <h2 class="mb-4">Категорії</h2>
+
+    <div class="row g-3" id="categories">
+        <!-- категории будут добавляться через JS -->
+    </div>
+
+</section>
+
+<!-- Meals -->
+<section class="container pb-5">
+
+    <h2 class="mb-4">Страви</h2>
+
+    <div class="row g-4" id="meals">
+        <!-- карточки блюд -->
+    </div>
+
+</section>
+
+<!-- Favorites -->
+<section class="container pb-5">
+
+    <h2 class="mb-4">⭐ Обрані рецепти</h2>
+
+    <div class="row g-4" id="favorites">
+        <!-- избранные блюда -->
+    </div>
+
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="mealModal" tabindex="-1">
+
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title" id="mealTitle">
+                    Назва страви
+                </h5>
+
+                <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body" id="mealBody">
+
+                <!-- информация о блюде -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

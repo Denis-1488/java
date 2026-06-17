@@ -1,0 +1,117 @@
+body {
+    background: #f5f7fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #ffb347, #ffcc33);
+    color: white;
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Карточки */
+.card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Кнопки */
+.btn {
+    border-radius: 12px;
+}
+
+.category-btn {
+    transition: .3s;
+}
+
+.category-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Избранное */
+.favorite-card {
+    border: 2px solid gold;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 20px;
+}
+
+.modal-body img {
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.ingredients-list li {
+    margin-bottom: 5px;
+}
+
+/* Заголовки */
+h2 {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Анимация */
+.card,
+.btn {
+    transition: all .3s ease;
+}
+
+/* Кнопка случайного блюда */
+#randomBtn {
+    font-size: 18px;
+    padding: 12px 25px;
+}
+
+/* Категории */
+#categories .btn {
+    font-weight: bold;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .card img {
+        height: 200px;
+    }
+
+}
